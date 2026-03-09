@@ -200,7 +200,7 @@ async function run() {
                 const result = await orders.insertOne(order)
 
                 if (result?.insertedId) {
-                    const productsCollection = database.collection('products');
+                    const productsCollection = database.collection('products')
 
                     // 2. Prepare Bulk Operations using 'name' as the unique identifier
                     const bulkOps = products.map(product => ({
