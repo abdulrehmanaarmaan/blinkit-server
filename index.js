@@ -58,7 +58,7 @@ async function run() {
             const result = await products.find(query)
                 .skip(skip)
                 .limit(limitNumber)
-                .toArray();
+                .toArray()
 
             // 5. Count only the items matching the query
             const totalProducts = await products.countDocuments(query);
