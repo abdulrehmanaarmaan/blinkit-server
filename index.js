@@ -32,7 +32,7 @@ async function run() {
 
             // 1. Single Product by ID (Priority)
             if (id) {
-                const result = await products.findOne({ _id: new ObjectId(id) });
+                const result = await products.findOne({ _id: new ObjectId(id) })
                 return res.send(result);
             }
 
