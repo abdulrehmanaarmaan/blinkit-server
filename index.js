@@ -197,7 +197,7 @@ async function run() {
 
             try {
                 // 1. Insert the order record
-                const result = await orders.insertOne(order);
+                const result = await orders.insertOne(order)
 
                 if (result?.insertedId) {
                     const productsCollection = database.collection('products');
